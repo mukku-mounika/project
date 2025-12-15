@@ -37,8 +37,7 @@ export default function Login() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          style={{ width: "100%", marginBottom: 10 }}
-        />
+          style={{ width: "100%", marginBottom: 10 }} />
         <button type="submit" style={{ width: "100%" }}>
           Login
         </button>
@@ -46,7 +45,6 @@ export default function Login() {
       <p style={{ marginTop: 10 }}>
         Don't have an account? <a href="/register">Register</a>
       </p>
-      <p className="forgot-password" onClick={handleForgetPassword}>Forgot Password?</p>
     </div>
   );
 }
