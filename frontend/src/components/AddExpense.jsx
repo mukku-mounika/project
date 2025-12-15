@@ -1,7 +1,5 @@
-// components/AddExpense.jsx
 import { useState, useEffect } from "react";
 import axios from "axios";
-
 export default function AddExpense({ refresh, categories = [] }) {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
@@ -40,7 +38,6 @@ export default function AddExpense({ refresh, categories = [] }) {
       alert(err.response?.data?.message || "Expense not saved");
     }
   };
-
   return (
     <div>
       <input placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)} />
